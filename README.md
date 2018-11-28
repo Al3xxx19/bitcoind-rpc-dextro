@@ -1,18 +1,18 @@
-bitcoind-rpc-dinero.js
+bitcoind-rpc-dextro.js
 ===============
 
 [![NPM Package](https://img.shields.io/npm/v/bitcoind-rpc-dinero.svg?style=flat-square)](https://www.npmjs.org/package/bitcoind-rpc-dinero)
 [![Build Status](https://img.shields.io/travis/dinerocoin/bitcoind-rpc-dinero.svg?branch=master&style=flat-square)](https://travis-ci.org/dinerocoin/bitcoind-rpc-dinero)
 [![Coverage Status](https://img.shields.io/coveralls/dinerocoin/bitcoind-rpc-dinero.svg?style=flat-square)](https://coveralls.io/r/dinerocoin/bitcoind-rpc-dinero?branch=master)
 
-A client library to connect to Dinero Core RPC in JavaScript.
+A client library to connect to dextro Core RPC in JavaScript.
 
 ## Get Started
 
-bitcoind-rpc-dinero.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
+bitcoind-rpc-dextro.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```bash
-npm install bitcoind-rpc-dinero
+npm install bitcoind-rpc-dextro
 ```
 
 ## RpcClient
@@ -30,7 +30,7 @@ Arguments :
 ```javascript
 var run = function() {
   var bitcore = require('bitcore');
-  var RpcClient = require('bitcoind-rpc-dinero');
+  var RpcClient = require('bitcoind-rpc-dextro');
 
   var config = {
     protocol: 'http',
@@ -84,10 +84,10 @@ var run = function() {
 
 You can dynamically access to the help of each method by doing
 ```
-const RpcClient = require('bitcoind-rpc-dinero');
+const RpcClient = require('bitcoind-rpc-dextro');
 var client = new RPCclient({
     protocol:'http',
-    user: 'dinero',
+    user: 'dextro',
     pass: 'local321', 
     host: '127.0.0.1', 
     port: 19998
